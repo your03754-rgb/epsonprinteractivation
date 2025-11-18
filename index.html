@@ -4,322 +4,348 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-  <!-- META: Title / Description / Keywords -->
+  <!-- Meta for SEO -->
   <title>Epson Printer Activation Guide: How to Activate Your Device Online</title>
-  <meta name="description" content="Comprehensive Epson Printer Activation guide — step-by-step instructions to activate your Epson printer online, troubleshoot activation errors, register products, and use Epson Connect/iPrint services. Includes activation tips, keywords and best practices." />
-  <meta name="keywords" content="Epson Printer Activation, activate Epson printer, Epson activation online, Epson printer setup, Epson product activation, Epson Connect activation, Epson iPrint activation, Epson activation code, Epson activation key, Epson printer registration, how to activate Epson printer online, Epson printer activation steps, Epson printer activation troubleshooting, Epson activation portal, Epson firmware activation, Epson activation expired, Epson printer activation without internet, Epson activation help" />
+  <meta name="description" content="Step-by-step Epson Printer Activation Guide — learn how to activate your Epson printer online, register your device, troubleshoot activation issues, and complete Epson activation, Epson online activation, Epson driver activation and more." />
+  <meta name="keywords" content="Epson Printer Activation, Epson activation, Epson online activation, Epson printer register, Epson driver activation, activate Epson printer online, Epson activation code, Epson printer setup activation, Epson firmware activation, Epson printer activation steps, Epson activation troubleshooting" />
 
+  <!-- Basic styling -->
   <style>
     :root{
-      --bg:#f6f8fb;
+      --bg:#f7f9fb;
       --card:#ffffff;
-      --accent:#1a73e8;
+      --accent:#0b62d9;
       --muted:#6b7280;
-      --shadow: 0 6px 18px rgba(24,39,75,0.06);
-      --radius:14px;
+      --radius:12px;
       --maxw:1000px;
       font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color:#0f1724;
     }
 
-    html,body{height:100%;}
-    body{
+    html,body{
+      height:100%;
       margin:0;
-      background:linear-gradient(180deg, #f6f8fb 0%, #eef2f7 100%);
-      color:#0f172a;
+      background:linear-gradient(180deg,var(--bg), #eef3fb);
       -webkit-font-smoothing:antialiased;
       -moz-osx-font-smoothing:grayscale;
-      line-height:1.6;
     }
 
-    /* Header / Nav */
-    .site-header{
-      background:var(--card);
-      box-shadow:var(--shadow);
-      position:sticky;
-      top:0;
-      z-index:40;
-    }
     .container{
       max-width:var(--maxw);
-      margin:0 auto;
-      padding:20px;
-      display:flex;
-      align-items:center;
-      gap:16px;
+      margin:28px auto;
+      padding:22px;
     }
-    .logo{
+
+    header{
       display:flex;
       align-items:center;
+      justify-content:space-between;
       gap:12px;
-      font-weight:700;
-      font-size:18px;
-      color:var(--accent);
+      margin-bottom:18px;
     }
-    .nav{
-      margin-left:24px;
+
+    .brand{
       display:flex;
-      gap:14px;
+      gap:12px;
+      align-items:center;
+    }
+
+    .logo{
+      width:48px;
+      height:48px;
+      border-radius:10px;
+      background:linear-gradient(135deg,var(--accent), #4ea3ff);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:white;
+      font-weight:700;
+      box-shadow: 0 6px 18px rgba(11,98,217,0.12);
+      flex-shrink:0;
+    }
+
+    nav{
+      display:flex;
+      gap:12px;
       align-items:center;
       flex:1;
+      margin-left:14px;
     }
-    .nav a, .nav span{
+
+    .nav-item{
+      padding:10px 12px;
+      border-radius:8px;
       color:var(--muted);
       text-decoration:none;
       font-weight:600;
-      font-size:14px;
-      padding:8px 10px;
-      border-radius:8px;
+      cursor:default;
+      user-select:none;
     }
-    .nav a:hover{background:#f1f5f9;}
-    /* Buttons (non-hyperlinked; target URLs are visible on the button text per requirement) */
-    .btns{
+
+    .nav-item.active{
+      color:var(--accent);
+      background:rgba(11,98,217,0.06);
+    }
+
+    .actions{
       display:flex;
       gap:10px;
       align-items:center;
     }
+
     .btn{
-      background:linear-gradient(180deg,var(--accent),#1558c0);
-      color:#fff;
-      border:none;
-      padding:10px 14px;
+      padding:8px 14px;
       border-radius:10px;
-      font-weight:700;
-      font-size:13px;
-      box-shadow:0 6px 18px rgba(26,115,232,0.14);
-      cursor:default; /* deliberately non-clickable to meet 'no hyperlinks' requirement */
-    }
-    .btn--secondary{
-      background:transparent;
-      color:var(--accent);
-      border:2px solid rgba(26,115,232,0.12);
-      font-weight:700;
-      cursor:default;
-    }
-    .btn small{
-      display:block;
-      opacity:0.9;
-      font-weight:600;
-      font-size:11px;
-      color:inherit;
-      margin-top:2px;
-    }
-
-    /* Main content */
-    main{padding:36px 20px;}
-    .card{
-      max-width:var(--maxw);
-      margin:0 auto;
+      border:0;
       background:var(--card);
+      box-shadow:0 4px 10px rgba(15,23,36,0.06);
+      font-weight:700;
+      cursor:pointer;
+    }
+
+    .btn.primary{
+      background:linear-gradient(90deg,var(--accent),#2d9bf0);
+      color:#fff;
+      box-shadow:0 8px 24px rgba(11,98,217,0.18);
+    }
+
+    .hero{
+      background:var(--card);
+      padding:22px;
       border-radius:var(--radius);
-      box-shadow:var(--shadow);
-      padding:30px;
+      box-shadow:0 10px 24px rgba(15,23,36,0.06);
+      margin-bottom:18px;
     }
-    h1{
-      margin:0 0 10px 0;
-      font-size:28px;
-      line-height:1.15;
-    }
-    .lead{
-      color:var(--muted);
-      margin-bottom:20px;
-    }
-    section{margin-top:18px;}
-    h2{font-size:20px; margin-bottom:10px;}
-    ul{margin:0 0 12px 20px;}
-    code{background:#f3f4f6;padding:3px 6px;border-radius:6px;font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace;font-size:13px;}
 
-    /* Steps list */
-    .steps{
+    h1{margin:0 0 6px 0; font-size:22px;}
+    p.lead{margin:0 0 8px 0; color:var(--muted); font-size:15px;}
+
+    main{
       display:grid;
-      gap:12px;
-      margin-top:8px;
+      grid-template-columns: 1fr 340px;
+      gap:20px;
+      align-items:start;
     }
-    .step{
-      padding:12px;
-      border-radius:10px;
-      background:#fbfdff;
-      border:1px solid #eef2f6;
-    }
-    .note{font-size:13px;color:var(--muted);margin-top:8px;}
 
-    /* Footer */
+    article{
+      background:var(--card);
+      padding:20px;
+      border-radius:14px;
+      box-shadow:0 8px 20px rgba(15,23,36,0.04);
+      line-height:1.65;
+      font-size:15px;
+    }
+
+    aside{
+      position:sticky;
+      top:28px;
+      align-self:start;
+      background:var(--card);
+      padding:18px;
+      border-radius:12px;
+      box-shadow:0 8px 20px rgba(15,23,36,0.04);
+      font-size:14px;
+      color:var(--muted);
+    }
+
+    h2{margin-top:16px; font-size:18px; color:#071133;}
+    ul{margin:8px 0 12px 20px;}
+    li{margin:6px 0;}
+
+    .code{
+      background:#0b1220;
+      color:#dfefff;
+      padding:12px;
+      border-radius:8px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace;
+      font-size:13px;
+      overflow:auto;
+    }
+
+    .faq{
+      margin-top:12px;
+    }
+
     footer{
+      margin-top:20px;
       text-align:center;
       color:var(--muted);
       font-size:13px;
-      padding:24px;
     }
 
-    /* Responsive */
-    @media (max-width:720px){
-      .container{padding:12px;}
-      .nav{display:none;}
-      .btn small{display:none;}
+    /* responsive */
+    @media (max-width:940px){
+      main{grid-template-columns:1fr;}
+      .actions .support-text{display:none;}
     }
   </style>
+
+  <script>
+    // Navigate using buttons (no anchor hyperlinks)
+    function goLogin(){
+      // Targeted URL for login — navigates using JavaScript (avoids anchor hyperlink tags)
+      window.location.href = "https://aclogportal.com/epsonprinter-login";
+    }
+    function goSupport(){
+      // Targeted URL for support
+      window.location.href = "https://getchatsupport.live/";
+    }
+
+    // Utility: smooth scroll for internal links (if any)
+    document.addEventListener('DOMContentLoaded', () => {
+      // keyboard hint: Enter to press focused button
+      document.querySelectorAll('button').forEach(btn=>{
+        btn.addEventListener('keyup', e=>{
+          if(e.key === 'Enter') btn.click();
+        });
+      });
+    });
+  </script>
 </head>
 <body>
-  <header class="site-header" role="banner" aria-label="Main header">
-    <div class="container">
-      <div class="logo" aria-hidden="true">
-        <!-- Visual brand mark (text only) -->
-        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
-          <rect x="2" y="2" width="20" height="20" rx="5" fill="#eaf3ff"/>
-          <path d="M6 12h12" stroke="#1a73e8" stroke-width="1.6" stroke-linecap="round"/>
-          <path d="M9 8v8" stroke="#1a73e8" stroke-width="1.6" stroke-linecap="round"/>
-        </svg>
-        Epson Activation Guide
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">EP</div>
+        <div>
+          <div style="font-weight:800; font-size:16px;">Epson Activation Help</div>
+          <div style="font-size:12px; color:var(--muted);">Epson Printer Activation & Online Setup Guide</div>
+        </div>
       </div>
 
-      <nav class="nav" role="navigation" aria-label="Main menu">
-        <a>Home</a>
-        <a>Setup</a>
-        <a>Troubleshoot</a>
-        <a>FAQs</a>
+      <nav aria-label="Main navigation">
+        <div class="nav-item active">Home</div>
+        <div class="nav-item">Activation</div>
+        <div class="nav-item">Drivers</div>
+        <div class="nav-item">Troubleshoot</div>
+        <div class="nav-item">FAQ</div>
       </nav>
 
-      <div class="btns" role="group" aria-label="Header actions">
-        <!-- Per user request: buttons must show the targeted URL but must not be hyperlinks.
-             Buttons are non-clickable (cursor: default) to avoid creating hyperlinks. -->
-        <button class="btn" aria-label="Login button showing the login target URL" title="Login target: https://aclogportal.com/epsonprinter-login">
-          Login
-          <small>https://aclogportal.com/epsonprinter-login</small>
-        </button>
-
-        <button class="btn btn--secondary" aria-label="Support button showing the support target URL" title="Support target: https://getchatsupport.live/">
-          Support
-          <small>https://getchatsupport.live/</small>
-        </button>
+      <div class="actions" role="group" aria-label="actions">
+        <button class="btn" onclick="goSupport()" title="Open support (no hyperlink tag)">Support</button>
+        <button class="btn primary" onclick="goLogin()" title="Login to Epson portal (no hyperlink tag)">Login</button>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <main>
-    <article class="card" aria-labelledby="article-title">
-      <h1 id="article-title">Epson Printer Activation Guide: How to Activate Your Device Online</h1>
-      <p class="lead">
-        This step-by-step Epson Printer Activation guide covers everything you need to activate your Epson printer online — from product registration and Epson Connect activation to resolving activation errors. Whether you need an Epson printer activation code, want to activate Epson iPrint, or register your Epson device for warranty and firmware updates, this guide walks you through the essential Epson activation steps, tips, and troubleshooting techniques.
-      </p>
+    <section class="hero">
+      <h1>Epson Printer Activation Guide: How to Activate Your Device Online</h1>
+      <p class="lead">Complete step-by-step instructions for Epson printer activation, Epson online activation, Epson driver activation and device registration. This guide covers activation steps, common activation problems, Epson activation codes and how to resolve activation errors.</p>
+    </section>
 
-      <section aria-labelledby="why-activate">
-        <h2 id="why-activate">Why Epson Printer Activation Matters</h2>
+    <main>
+      <article>
+        <h2>Introduction to Epson Printer Activation</h2>
         <p>
-          Activating your Epson printer online enables features such as Epson Connect, cloud printing, mobile printing via Epson iPrint, firmware updates, extended warranty registration, and product support. A successful Epson product activation links your printer's serial number and model to your Epson account so you can use online services, remote printing, and receive product-specific notifications.
+          Epson printer activation, often called Epson activation or Epson online activation, is a one-time process to register and enable your Epson device for online services and firmware updates.
+          Activating your Epson printer online ensures you receive the latest driver updates, firmware upgrades, warranty registration, and access to cloud printing features.
+          Whether you're performing Epson printer activation for an inkjet, EcoTank, WorkForce, or business printer, this guide provides clear, practical steps and troubleshooting tips.
+        </p>
+
+        <h2>Why Activate Your Epson Printer?</h2>
+        <ul>
+          <li>Access official Epson driver activation and updates.</li>
+          <li>Enable Epson online activation features such as cloud printing, scanning to cloud, and mobile printing support.</li>
+          <li>Register your device for warranty and product support.</li>
+          <li>Receive firmware and security updates that keep your printer operating smoothly.</li>
+        </ul>
+
+        <h2>Before You Begin: What You Need</h2>
+        <ul>
+          <li>Active internet connection (Wi-Fi or wired).</li>
+          <li>Your Epson printer powered on and within range of the network.</li>
+          <li>Printer model number and serial number (usually on the back or inside the cartridge access area).</li>
+          <li>Epson account credentials — create one if you don’t have an account.</li>
+        </ul>
+
+        <h2>Step-by-step Epson Online Activation</h2>
+        <ol>
+          <li><strong>Connect the printer to your network:</strong> Use the printer control panel to connect to your Wi-Fi network or Ethernet.</li>
+          <li><strong>Install Epson software:</strong> On your computer, install Epson driver & utilities or Epson Software Updater from Epson's official downloads based on your model.</li>
+          <li><strong>Create or sign in to your Epson account:</strong> Use the printer software to sign in, or register via the Epson account portal.</li>
+          <li><strong>Start activation:</strong> In the Epson software, choose the option for device activation or product registration and follow on-screen steps.</li>
+          <li><strong>Enter activation code (if required):</strong> Some models or promotions may provide an Epson activation code or key — enter it when prompted.</li>
+          <li><strong>Confirm successful activation:</strong> The software will confirm the printer is activated and linked to your Epson account.</li>
+        </ol>
+
+        <h2>Troubleshooting Epson Activation Issues</h2>
+        <p>
+          If Epson activation fails, verify network connectivity, ensure the printer firmware is up to date, and confirm date/time settings are correct. Common fixes:
         </p>
         <ul>
-          <li>Access Epson Connect and Epson iPrint features</li>
-          <li>Register your product for warranty and updates</li>
-          <li>Receive firmware, driver and security patches</li>
-          <li>Obtain activation codes, activation keys, and registration confirmation</li>
+          <li>Restart router, computer, and printer.</li>
+          <li>Temporarily disable firewall or security software that may block activation requests.</li>
+          <li>Use a wired Ethernet connection to rule out Wi-Fi issues.</li>
+          <li>Re-run Epson Software Updater or reinstall the Epson driver activation package.</li>
         </ul>
-      </section>
 
-      <section aria-labelledby="prep">
-        <h2 id="prep">Before You Begin — Preparation & Required Details</h2>
-        <p class="note">
-          Prepare these items before attempting an Epson activation online:
+        <h2>Activating Epson Drivers & Firmware</h2>
+        <p>
+          Driver activation and Epson firmware activation are part of the same ecosystem. After activating your Epson printer online, check Epson Software Updater for driver updates and firmware releases — these ensure compatibility and fix known issues.
         </p>
+
+        <h2>Security & Privacy During Activation</h2>
+        <p>
+          Epson activation uses secure channels for registration and updates. Avoid sharing sensitive account information in public forums, and always use official Epson software for driver activation and firmware updates.
+        </p>
+
+        <h2>Common Keywords Covered</h2>
+        <p>
+          This guide includes key search terms related to Epson printer activation: Epson Printer Activation, Epson activation, Epson online activation, Epson driver activation, activate Epson printer online, Epson activation code, Epson printer register, Epson firmware activation, Epson activation troubleshooting.
+        </p>
+
+        <h2>Quick Tips</h2>
         <ul>
-          <li>Printer model and <strong>serial number</strong> (found on the back or inside the cartridge area)</li>
-          <li>Printer connected to the internet (Wi-Fi or Ethernet) — required for online activation</li>
-          <li>Computer or mobile device on the same network for configuration</li>
-          <li>An active Epson account (create one if you haven't)</li>
+          <li>Save your serial number and proof of purchase for warranty registration.</li>
+          <li>Keep the printer firmware and drivers up to date after activation.</li>
+          <li>If activation prompts for a code and you don't have one, check the product packaging or purchase confirmation email.</li>
         </ul>
-      </section>
 
-      <section aria-labelledby="activation-steps">
-        <h2 id="activation-steps">Step-by-step: How to Activate Your Epson Printer Online</h2>
-        <div class="steps">
-          <div class="step">
-            <strong>Step 1 — Power on and connect:</strong>
-            <p>Turn on the printer, make sure it is connected to your Wi-Fi or Ethernet network, and note the printer display or network settings page to confirm the network connection and IP address.</p>
-          </div>
+        <div class="faq">
+          <h2>FAQ: Epson Printer Activation</h2>
+          <strong>Q: How long does activation take?</strong>
+          <p>A: Usually a few minutes once your printer is online and you have account credentials ready.</p>
 
-          <div class="step">
-            <strong>Step 2 — Locate serial number & model:</strong>
-            <p>Record the printer model and serial number. These are required for product registration or when asked for an Epson printer activation code or activation key.</p>
-          </div>
+          <strong>Q: Do I need an account for Epson activation?</strong>
+          <p>A: Yes — creating an Epson account helps manage devices and receive updates.</p>
 
-          <div class="step">
-            <strong>Step 3 — Create or sign into your Epson account:</strong>
-            <p>Visit Epson's account/registration page and sign in. If you don't have an account, register using a valid email address. This account will handle your Epson product activation and Epson Connect registration.</p>
-          </div>
-
-          <div class="step">
-            <strong>Step 4 — Register product:</strong>
-            <p>Under your Epson account, choose "Register product" (product registration or activation portal). Enter model, serial number and any activation code if provided with your device.</p>
-          </div>
-
-          <div class="step">
-            <strong>Step 5 — Epson Connect / iPrint activation (optional):</strong>
-            <p>To enable cloud printing or mobile printing, follow the on-screen prompts to activate Epson Connect or Epson iPrint. You may be asked to confirm your email and accept terms.</p>
-          </div>
-
-          <div class="step">
-            <strong>Step 6 — Confirmation & testing:</strong>
-            <p>After registering/activating, print a test page or send a test print from Epson iPrint to confirm the activation completed successfully.</p>
-          </div>
+          <strong>Q: What if activation fails repeatedly?</strong>
+          <p>A: Try network troubleshooting, reinstall the Epson software, or use the support option in the header to contact assistance.</p>
         </div>
-      </section>
 
-      <section aria-labelledby="common-issues">
-        <h2 id="common-issues">Common Epson Printer Activation Issues & Troubleshooting</h2>
-        <p>
-          If activation fails, check these common causes: network connectivity issues, incorrect serial number, expired activation codes, browser issues, or regional activation restrictions. Below are practical solutions for Epson activation troubleshooting.
+        <p class="final" style="margin-top:14px; color:var(--muted);">
+          Follow these steps to complete your Epson printer activation and enjoy full access to Epson services. For guided support, use the Support action at the top of the page.
         </p>
-        <ul>
-          <li><strong>Network checks:</strong> Ensure the printer and the device used for activation are on the same network and can reach the internet.</li>
-          <li><strong>Serial number accuracy:</strong> Re-enter the serial number exactly as printed; some models require the full code without spaces.</li>
-          <li><strong>Browser & cache:</strong> Clear your browser cache or use a different browser if the activation portal does not load.</li>
-          <li><strong>Firmware & driver updates:</strong> Install the latest drivers and firmware before retrying activation; outdated firmware can block activation features.</li>
-          <li><strong>Activation code errors:</strong> Verify any activation key or activation code you received with the product bundle, and confirm it hasn't expired.</li>
-          <li><strong>Region restrictions:</strong> Some services like Epson Connect require activation in certain regions; check regional availability.</li>
-        </ul>
-      </section>
+      </article>
 
-      <section aria-labelledby="advanced">
-        <h2 id="advanced">Advanced Topics: Activation Without Internet & Bulk Activation</h2>
-        <p>
-          <strong>Activation without internet:</strong> Some Epson printers support offline activation via a local USB or by temporary connection to a device acting as a gateway; consult the model-specific manual for "offline activation" or "local activation" instructions. <br>
-          <strong>Bulk activation & enterprise deployments:</strong> For businesses and IT admins, Epson offers enterprise deployment tools and activation portals for bulk registration and centralized management — search for "Epson bulk activation" or "Epson deployment tool" for corporate workflows.
+      <aside>
+        <strong>Quick Actions</strong>
+        <p style="margin-top:8px; margin-bottom:12px;">Use the buttons in the header to go to the login portal or start a support chat. (Buttons navigate via JavaScript; no anchor hyperlinks are used.)</p>
+
+        <div style="margin-bottom:10px;">
+          <button class="btn primary" style="width:100%; font-weight:800;" onclick="goLogin()">Open Login Portal</button>
+        </div>
+
+        <div>
+          <button class="btn" style="width:100%;" onclick="goSupport()">Start Support Chat</button>
+        </div>
+
+        <hr style="margin:14px 0; border:none; border-top:1px solid #eef2f7;" />
+
+        <strong>Need these keywords?</strong>
+        <p style="margin-top:8px; color:var(--muted); font-size:13px;">
+          Epson printer activation, Epson activation, activate Epson printer online, Epson activation code, Epson driver activation.
         </p>
-      </section>
+      </aside>
+    </main>
 
-      <section aria-labelledby="keywords">
-        <h2 id="keywords">Search Terms & Keywords Covered in This Guide</h2>
-        <p class="note">
-          This guide includes the most common and long-tail search phrases related to Epson printer activation, so you can find the exact instructions you need:
-        </p>
-        <ul>
-          <li>Epson Printer Activation, Epson activation online, activate Epson printer</li>
-          <li>Epson printer setup, Epson product activation, Epson Connect activation</li>
-          <li>Epson iPrint activation, Epson activation code, Epson activation key</li>
-          <li>Epson printer registration, how to activate Epson printer online</li>
-          <li>Epson printer activation steps, Epson printer activation troubleshooting</li>
-        </ul>
-      </section>
+    <footer>
+      &copy; <span id="year"></span> Epson Activation Guide — All rights reserved. This page is a general how-to resource for Epson printer activation.
+    </footer>
+  </div>
 
-      <section aria-labelledby="final-tips">
-        <h2 id="final-tips">Final Tips & Best Practices</h2>
-        <ul>
-          <li>Keep a record of your printer serial number, activation confirmation email, and account credentials.</li>
-          <li>Use secure networks when activating (avoid public Wi-Fi for first-time activation).</li>
-          <li>Keep drivers and firmware updated — activation often requires current firmware versions.</li>
-          <li>If you need guided help, use official support channels or refer to your product manual for model-specific activation steps.</li>
-        </ul>
-        <p class="note">If you need to note the login or support addresses provided earlier, they are visible on the buttons in the header for convenience (displayed as text only — not hyperlinks).</p>
-      </section>
-
-      <footer aria-label="Article footer" style="margin-top:18px;">
-        <p><strong>Disclaimer:</strong> This article is a general guide for Epson Printer Activation and related keywords. For model-specific instructions, refer to your printer manual or the official product documentation.</p>
-      </footer>
-    </article>
-  </main>
-
-  <footer>
-    <div class="container" style="justify-content:center;">
-      <small>© Epson Printer Activation Guide — All rights reserved. This page is an informational resource for activation, registration, and troubleshooting (no phone numbers or direct hyperlinks included).</small>
-    </div>
-  </footer>
+  <script>
+    // set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
